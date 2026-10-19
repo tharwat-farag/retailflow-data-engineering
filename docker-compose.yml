@@ -1,0 +1,35 @@
+# ==============================================================================
+# RetailFlow Data Engineering - Local Warehouse Docker Compose Configuration
+# ==============================================================================
+# NOTE: The fallback credentials defined below via parameter substitution (${VAR:-default})
+# are intended strictly for local development and automated testing environments.
+# DO NOT use these fallback credentials in production or staging deployments.
+# Non-local environments must supply strong credentials via environment variables
+# or a secured .env file (refer to .env.example).
+# ==============================================================================
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: retailflow_postgres
+    restart: unless-stopped
+    environment:
+      # Local development credentials (overridden by .env or shell environment)
+      POSTGRES_USER: ${POSTGRES_USER:-retailflow_admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-retailflow_secure_pass}
+      POSTGRES_DB: ${POSTGRES_DB:-retailflow_warehouse}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - retailflow_pgdata:/var/lib/postgresql/data
+      - ./sql/schema:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-retailflow_admin} -d ${POSTGRES_DB:-retailflow_warehouse}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  retailflow_pgdata:
+    name: retailflow_pgdata

@@ -1,0 +1,127 @@
+{
+  "batch_id": "bca33f74-3cd8-4fb7-adcb-974dda046f5c",
+  "transformation_timestamp_utc": "2026-10-18T13:57:52.891954+00:00",
+  "source_directory": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\bronze",
+  "silver_directory": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\silver",
+  "overall_status": "SUCCESS",
+  "summary": {
+    "total_input_records": 3369,
+    "total_output_records": 3369,
+    "total_quarantined_records": 0,
+    "total_deduplicated_records": 0
+  },
+  "applied_transformations": [
+    "Whitespace stripping and casing normalization (title/upper/lower)",
+    "Numeric rounding and formatting (2 decimals for currency, 3 for reliability, 4 for fulfillment)",
+    "Strict ISO 8601 calendar date parsing and standardization",
+    "Referential integrity preservation across parent-child datasets",
+    "Deterministic deduplication and quarantine routing for corrupted records",
+    "Derived fields: profit margins, inventory stock availability and statuses, delivery delay metrics"
+  ],
+  "datasets": {
+    "suppliers.csv": {
+      "input_records": 25,
+      "output_records": 25,
+      "quarantined_records": 0,
+      "deduplicated_records": 0,
+      "columns": [
+        "supplier_id",
+        "supplier_name",
+        "contact_email",
+        "country",
+        "reliability_score",
+        "lead_time_days",
+        "reliability_tier"
+      ]
+    },
+    "warehouses.csv": {
+      "input_records": 6,
+      "output_records": 6,
+      "quarantined_records": 0,
+      "deduplicated_records": 0,
+      "columns": [
+        "warehouse_id",
+        "warehouse_name",
+        "city",
+        "state",
+        "country",
+        "capacity_units"
+      ]
+    },
+    "products.csv": {
+      "input_records": 100,
+      "output_records": 100,
+      "quarantined_records": 0,
+      "deduplicated_records": 0,
+      "columns": [
+        "product_id",
+        "product_name",
+        "category",
+        "subcategory",
+        "unit_cost",
+        "unit_price",
+        "margin_amount",
+        "margin_percentage",
+        "reorder_point",
+        "target_stock_level"
+      ]
+    },
+    "inventory.csv": {
+      "input_records": 498,
+      "output_records": 498,
+      "quarantined_records": 0,
+      "deduplicated_records": 0,
+      "columns": [
+        "inventory_id",
+        "warehouse_id",
+        "product_id",
+        "stock_on_hand",
+        "stock_allocated",
+        "stock_reserved",
+        "stock_available",
+        "inventory_status",
+        "last_counted_date"
+      ]
+    },
+    "purchase_orders.csv": {
+      "input_records": 600,
+      "output_records": 600,
+      "quarantined_records": 0,
+      "deduplicated_records": 0,
+      "columns": [
+        "order_id",
+        "supplier_id",
+        "warehouse_id",
+        "order_date",
+        "expected_delivery_date",
+        "actual_delivery_date",
+        "order_status",
+        "total_amount",
+        "delivery_delay_days",
+        "is_delayed",
+        "fulfillment_lead_time_days"
+      ]
+    },
+    "purchase_order_items.csv": {
+      "input_records": 2140,
+      "output_records": 2140,
+      "quarantined_records": 0,
+      "deduplicated_records": 0,
+      "columns": [
+        "order_item_id",
+        "order_id",
+        "product_id",
+        "quantity_ordered",
+        "quantity_received",
+        "quantity_pending",
+        "fulfillment_ratio",
+        "unit_price",
+        "line_total"
+      ]
+    }
+  },
+  "quarantine_summary": {
+    "total_quarantined": 0,
+    "quarantine_directory": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\silver\\quarantine"
+  }
+}

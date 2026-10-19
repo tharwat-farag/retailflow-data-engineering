@@ -1,0 +1,26 @@
+supplier_id,supplier_name,contact_email,country,reliability_score,lead_time_days
+SUP001,Vanguard Logistics Ltd,supply@vanguardlogi.com,Germany,0.753,16
+SUP002,Vanguard Enterprises,supply@vanguardente.com,USA,0.807,5
+SUP003,Summit Supply Co,supply@summitsupply.com,USA,0.861,8
+SUP004,Zenith Global Trade,supply@zenithglobal.com,USA,0.857,5
+SUP005,Atlantic Global Trade,supply@atlanticglob.com,USA,0.727,10
+SUP006,Vanguard Manufacturing Corp,supply@vanguardmanu.com,USA,0.788,10
+SUP007,Global Logistics Ltd,supply@globallogist.com,Germany,0.841,28
+SUP008,Echo Manufacturing Corp,supply@echomanufact.com,China,0.929,39
+SUP009,Quantum Supply Co,supply@quantumsuppl.com,Germany,0.694,17
+SUP010,Metro Manufacturing Corp,supply@metromanufac.com,Vietnam,0.94,30
+SUP011,Global Distribution,supply@globaldistri.com,China,0.789,31
+SUP012,Global Manufacturing Corp,supply@globalmanufa.com,China,0.731,43
+SUP013,Keystone Industries Inc,supply@keystoneindu.com,China,0.761,40
+SUP014,Zenith Supply Co,supply@zenithsupply.com,Germany,0.933,26
+SUP015,Nexus Supply Co,supply@nexussupplyc.com,Mexico,0.922,13
+SUP016,Pinnacle Tech Components,supply@pinnacletech.com,USA,0.83,12
+SUP017,Pacific Wholesale Partners,supply@pacificwhole.com,USA,0.903,9
+SUP018,Horizon Global Trade,supply@horizongloba.com,USA,0.979,7
+SUP019,Cascade Distribution,supply@cascadedistr.com,USA,0.694,6
+SUP020,Pacific Industries Inc,supply@pacificindus.com,Mexico,0.807,8
+SUP021,Echo Global Trade,supply@echoglobaltr.com,China,0.82,28
+SUP022,Zenith Logistics Ltd,supply@zenithlogist.com,Germany,0.714,28
+SUP023,Zenith Wholesale Partners,supply@zenithwholes.com,Mexico,0.782,11
+SUP024,Horizon Industries Inc,supply@horizonindus.com,China,0.966,43
+SUP025,Global Enterprises,supply@globalenterp.com,Mexico,0.832,8

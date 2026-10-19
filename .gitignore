@@ -1,0 +1,92 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+logs/
+airflow/logs/
+
+# Environment Variables & Secrets
+.env
+.env.*
+*.env.local
+!.env.example
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Test and type-check artifacts
+.pytest_cache/
+.coverage
+coverage.xml
+test-results/
+.mypy_cache/
+
+# Generated pipeline reports and temporary files
+*.tmp
+*.bak
+
+# Local Airflow state
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# Secrets and private keys
+*.pem
+*.key

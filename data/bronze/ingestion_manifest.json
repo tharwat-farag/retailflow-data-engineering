@@ -1,0 +1,131 @@
+{
+  "batch_id": "c2f4f20b-072c-440d-9352-cef33a5f485a",
+  "ingestion_timestamp_utc": "2026-10-18T13:46:31.450216+00:00",
+  "source_directory": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\raw",
+  "bronze_directory": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\bronze",
+  "total_files": 6,
+  "total_records": 3369,
+  "status": "SUCCESS",
+  "files": {
+    "suppliers.csv": {
+      "source_filename": "suppliers.csv",
+      "source_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\raw\\suppliers.csv",
+      "bronze_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\bronze\\suppliers.csv",
+      "row_count": 25,
+      "column_count": 6,
+      "column_names": [
+        "supplier_id",
+        "supplier_name",
+        "contact_email",
+        "country",
+        "reliability_score",
+        "lead_time_days"
+      ],
+      "file_size_bytes": 1790,
+      "sha256": "3377e15e075133844a5d34a0e8e43dfa34e26513ea0c31eac4be80348213e244",
+      "ingestion_timestamp_utc": "2026-10-18T13:46:31.377545+00:00",
+      "status": "SUCCESS"
+    },
+    "warehouses.csv": {
+      "source_filename": "warehouses.csv",
+      "source_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\raw\\warehouses.csv",
+      "bronze_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\bronze\\warehouses.csv",
+      "row_count": 6,
+      "column_count": 6,
+      "column_names": [
+        "warehouse_id",
+        "warehouse_name",
+        "city",
+        "state",
+        "country",
+        "capacity_units"
+      ],
+      "file_size_bytes": 426,
+      "sha256": "3a7ebf47f6c5d2468fdbff5f276ad3e4a139034ebe863fce4cbd0bc1faaa24de",
+      "ingestion_timestamp_utc": "2026-10-18T13:46:31.380916+00:00",
+      "status": "SUCCESS"
+    },
+    "products.csv": {
+      "source_filename": "products.csv",
+      "source_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\raw\\products.csv",
+      "bronze_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\bronze\\products.csv",
+      "row_count": 100,
+      "column_count": 8,
+      "column_names": [
+        "product_id",
+        "product_name",
+        "category",
+        "subcategory",
+        "unit_cost",
+        "unit_price",
+        "reorder_point",
+        "target_stock_level"
+      ],
+      "file_size_bytes": 8512,
+      "sha256": "047906b59653ae1075c550cba2e86293baeb863ebead83f5df20c10589625c6d",
+      "ingestion_timestamp_utc": "2026-10-18T13:46:31.385411+00:00",
+      "status": "SUCCESS"
+    },
+    "inventory.csv": {
+      "source_filename": "inventory.csv",
+      "source_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\raw\\inventory.csv",
+      "bronze_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\bronze\\inventory.csv",
+      "row_count": 498,
+      "column_count": 7,
+      "column_names": [
+        "inventory_id",
+        "warehouse_id",
+        "product_id",
+        "stock_on_hand",
+        "stock_allocated",
+        "stock_reserved",
+        "last_counted_date"
+      ],
+      "file_size_bytes": 21631,
+      "sha256": "8889e205ebdc304bd05c27eed1909f0856615c8a500fd05eeb8f24034c0527b8",
+      "ingestion_timestamp_utc": "2026-10-18T13:46:31.398827+00:00",
+      "status": "SUCCESS"
+    },
+    "purchase_orders.csv": {
+      "source_filename": "purchase_orders.csv",
+      "source_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\raw\\purchase_orders.csv",
+      "bronze_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\bronze\\purchase_orders.csv",
+      "row_count": 600,
+      "column_count": 8,
+      "column_names": [
+        "order_id",
+        "supplier_id",
+        "warehouse_id",
+        "order_date",
+        "expected_delivery_date",
+        "actual_delivery_date",
+        "order_status",
+        "total_amount"
+      ],
+      "file_size_bytes": 43381,
+      "sha256": "f801775b50ca9597173e5ce8a89c781bd34a8df47b2d3371d8a8869a99ed816e",
+      "ingestion_timestamp_utc": "2026-10-18T13:46:31.416018+00:00",
+      "status": "SUCCESS"
+    },
+    "purchase_order_items.csv": {
+      "source_filename": "purchase_order_items.csv",
+      "source_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\raw\\purchase_order_items.csv",
+      "bronze_path": "D:\\Data Engineer Projects\\retailflow-data-engineering\\data\\bronze\\purchase_order_items.csv",
+      "row_count": 2140,
+      "column_count": 7,
+      "column_names": [
+        "order_item_id",
+        "order_id",
+        "product_id",
+        "quantity_ordered",
+        "quantity_received",
+        "unit_price",
+        "line_total"
+      ],
+      "file_size_bytes": 102680,
+      "sha256": "dcd1a81c0064930cc0761d649e1835ebed2917e0075670b347db76101a8f2151",
+      "ingestion_timestamp_utc": "2026-10-18T13:46:31.439278+00:00",
+      "status": "SUCCESS"
+    }
+  }
+}

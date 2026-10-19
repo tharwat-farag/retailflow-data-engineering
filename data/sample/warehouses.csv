@@ -1,0 +1,6 @@
+warehouse_id,warehouse_name,city,state,country,capacity_units
+WH001,Dallas Central Distribution Center,Dallas,TX,USA,250000
+WH002,Chicago Regional Logistics Hub,Chicago,IL,USA,180000
+WH003,Seattle Pacific Fulfillment Hub,Seattle,WA,USA,140000
+WH004,Atlanta Southeast Mega Hub,Atlanta,GA,USA,220000
+WH005,New Jersey Port Gateway Center,Edison,NJ,USA,195000

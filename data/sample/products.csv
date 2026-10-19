@@ -1,0 +1,6 @@
+product_id,product_name,category,subcategory,unit_cost,unit_price,reorder_point,target_stock_level
+PRD0001,Plus Yoga Mat Pro,Sports & Outdoors,Camping & Fitness,47.58,69.43,72,289
+PRD0002,Compact Moisture Wicking T-Shirt,Apparel,Activewear,21.88,28.78,71,302
+PRD0003,Pro Yoga Mat Pro,Sports & Outdoors,Camping & Fitness,13.4,26.83,35,93
+PRD0004,Compact Bamboo Drawer Organizer,Home & Kitchen,Organization,35.63,49.98,85,373
+PRD0005,Compact Smart Fitness Tracker,Electronics,Audio & Wearables,159.84,261.9,52,226
